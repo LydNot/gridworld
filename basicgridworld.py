@@ -6,7 +6,7 @@ class GridWorld:
         self.height = height
         self.grid = np.zeros((height, width))
         self.agent_pos = (0, 0)
-        self.goal_pos = (4, 4)
+        self.goal_pos = (height - 1, width - 1)
 
     def render(self):
         render_grid = self.grid.copy()
